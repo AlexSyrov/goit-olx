@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio v.1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним:</b>
+        <button class="button-close" data-modal-close>
+          <svg class="close">
+            <use href="./images/webstudio.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+
+        <form class="form" autocomplete="off">
+          <div class="form-field">
+            <input type="text" name="name" id="name" placeholder=" " />
+            <label for="name" class="form-label">Имя</label>
+            <svg class="icon-modal">
+              <use href="./images/webstudio.svg#icon-person-black-18dp"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input type="tel" name="telephone" id="tel" placeholder=" " />
+            <label for="tel" class="form-label">Телефон</label>
+            <svg class="icon-modal">
+              <use href="./images/webstudio.svg#icon-phone-black-18dp"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input type="email" name="email" id="mail" placeholder=" " />
+            <label for="mail" class="form-label">Почта</label>
+            <svg class="icon-modal">
+              <use href="./images/webstudio.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <textarea
+              name="comment"
+              rows="5"
+              cols="50"
+              id="comment"
+              placeholder=" "
+            ></textarea>
+            <label for="comment" class="form-label-comment">Коментарий</label>
+          </div>
+          <div>
+            <label class="checkbox-label">
+              <input
+                name="checkbox"
+                type="checkbox"
+                value="agreement conditions"
+                class="checkbox"
+              /><span class="check-ikon"></span>Соглашаюсь с рассылкой и
+              принимаю
+              <a class="contract" href="/">Условия договора</a>
+            </label>
+          </div>
+          <div class="modal-button">
+            <button class="button-secondary" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Шапка-->
+    <header class="head-container">
+      <!--Навигация-->
+
+      <nav class="nav-flex">
+        <!--Лого-->
+        <a href="/"
+          ><span class="logo-primary">Web</span>
+          <span class="logo-secondary">Studio</span></a
+        >
+        <!--Список страниц-->
+        <ul class="site-nav">
+          <li class="item">
+            <a href="./" class="link current">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="/" class="link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!--Список контактов-->
+
+      <address class="site-nav-ad">
+        <a href="mailto:info@devstudio.com" class="link">
+          <svg class="e-t-icon-envelope">
+            <use href="./images/webstudio.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+
+        <a href="tel:380961111111" class="link">
+          <svg class="e-t-icon-smartphone">
+            <use href="./images/webstudio.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </address>
+    </header>
+
+    <!--Основной контент-->
+    <main>
+      <!--Сецкция ГЕРОЙ-->
+      <section class="hero">
+        <div>
+          <h1 class="hero-title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+
+          <button class="button-secondary" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section>
+
+      <!--Сецкция ФИТЧИ-->
+      <section class="feature">
+        <div class="container">
+          <ul class="list features-flex">
+            <!--Внимание к деталям-->
+            <li class="feature-item">
+              <div class="b-g-c-features">
+                <svg class="features-icon">
+                  <use href="./images/webstudio.svg#icon-antenna_1"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="features-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+
+            <!--Пунктуальность-->
+            <li class="feature-item">
+              <div class="b-g-c-features">
+                <svg class="features-icon">
+                  <use href="./images/webstudio.svg#icon-clock_1"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="features-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+
+            <!--Планирование-->
+            <li class="feature-item">
+              <div class="b-g-c-features">
+                <svg class="features-icon">
+                  <use href="./images/webstudio.svg#icon-diagram_1"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">ПЛАНИРОВАНИЕ</h3>
+              <p class="features-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+
+            <!--Современные технологии-->
+            <li class="feature-item">
+              <div class="b-g-c-features">
+                <svg class="features-icon">
+                  <use href="./images/webstudio.svg#icon-astronaut_1"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="features-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Сецкция Чем мы занимаемся-->
+      <section class="wawd">
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="list wawd-flex">
+            <!--ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ-->
+            <li class="img-wawd">
+              <div class="wawd-position-img">
+                <img
+                  src="./images/what_are_we_doing/laptop.jpg"
+                  alt="Ноутбук"
+                />
+              </div>
+              <div class="wawd-position">
+                <h3 class="wawd-item">
+                  ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
+                </h3>
+              </div>
+            </li>
+
+            <!--МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ-->
+            <li class="img-wawd">
+              <div class="wawd-position-img">
+                <img
+                  src="./images/what_are_we_doing/smartphone.jpg"
+                  alt="Смартфон"
+                />
+              </div>
+              <div class="wawd-position">
+                <h3 class="wawd-item">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+              </div>
+            </li>
+
+            <!--ДЕЗАЙНИРСКИЕ РЕШЕНИЯ-->
+            <li class="img-wawd">
+              <div class="wawd-position-img">
+                <img
+                  src="./images/what_are_we_doing/screen.jpg"
+                  alt="Монитор"
+                />
+              </div>
+              <div class="wawd-position">
+                <h3 class="wawd-item">ДЕЗАЙНИРСКИЕ РЕШЕНИЯ</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Сецкция Наша команда-->
+      <section class="team-box">
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+          <ul class="team-list team-flex">
+            <!--Product Designer-->
+            <li class="photo-workers">
+              <img
+                src="./images/team/img.jpg"
+                alt="Photo Product Designer"
+                width="270"
+                class="workers-photo"
+              />
+              <div class="info-container">
+                <h3 class="member-title">Николай Кучеренко</h3>
+                <p class="postposition" lang="en">Product Designer</p>
+                <ul class="list sl-flex">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-instagram"></use>
+                      </svg>
+
+                      <span class="f-heading">Instagram</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="f-heading">Twitter</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="f-heading">FaceBook</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="f-heading">Linkedin</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!--Frontend Developer-->
+            <li class="photo-workers">
+              <img
+                src="./images/team/img_(1).jpg"
+                alt="Photo Frontend Developer"
+                width="270"
+                class="workers-photo"
+              />
+              <div class="info-container">
+                <h3 class="member-title">Ольга Иванова</h3>
+                <p class="postposition" lang="en">Frontend Developer</p>
+                <ul class="list sl-flex">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-instagram"></use>
+                      </svg>
+
+                      <span class="f-heading">Instagram</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="f-heading">Twitter</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="f-heading">FaceBook</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="f-heading">Linkedin</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!--Marketing-->
+            <li class="photo-workers">
+              <img
+                src="./images/team/img_(2).jpg"
+                alt="Photo Marketing"
+                width="270"
+                class="workers-photo"
+              />
+              <div class="info-container">
+                <h3 class="member-title">Андрей Шевченко</h3>
+                <p class="postposition" lang="en">Marketing</p>
+                <ul class="list sl-flex">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-instagram"></use>
+                      </svg>
+
+                      <span class="f-heading">Instagram</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="f-heading">Twitter</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="f-heading">FaceBook</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="f-heading">Linkedin</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!--UI Designer-->
+            <li class="photo-workers">
+              <img
+                src="./images/team/img_(3).jpg"
+                alt="Photo UI Designer"
+                width="270"
+                class="workers-photo"
+              />
+              <div class="info-container">
+                <h3 class="member-title">Иван Николаев</h3>
+                <p class="postposition" lang="en">UI Designer</p>
+                <ul class="list sl-flex">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-instagram"></use>
+                      </svg>
+
+                      <span class="f-heading">Instagram</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="f-heading">Twitter</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="f-heading">FaceBook</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/?hl=ru"
+                      class="socialnets"
+                    >
+                      <svg class="socialnets-icons" width="20px" height="20px">
+                        <use href="./images/webstudio.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="f-heading">Linkedin</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Сецкция Наши Клиенты-->
+      <section class="our-clients">
+        <div class="container">
+          <h2 class="title">Постоянные клиенты</h2>
+
+          <ul class="list clients-flex">
+            <!--Компания 1-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <svg class="clients-icon" width="45px" height="50px">
+                  <use href="./images/webstudio.svg#icon-logo_1"></use>
+                </svg>
+                <span class="f-heading">YA&CO</span>
+              </a>
+            </li>
+
+            <!--Компания 2-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <div class="clients-border">
+                  <svg class="clients-icon" width="40px" height="52px">
+                    <use href="./images/webstudio.svg#icon-logo_2"></use>
+                  </svg>
+                  <span class="f-heading">Company Tagline Here</span>
+                </div>
+              </a>
+            </li>
+
+            <!--Компания 3-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <div class="clients-border">
+                  <svg class="clients-icon" width="41px" height="43px">
+                    <use href="./images/webstudio.svg#icon-logo_3"></use>
+                  </svg>
+                  <span class="f-heading">Company</span>
+                </div>
+              </a>
+            </li>
+
+            <!--Компания 4-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <div class="clients-border">
+                  <svg class="clients-icon" width="80px" height="42px">
+                    <use href="./images/webstudio.svg#icon-logo_4"></use>
+                  </svg>
+                  <span class="f-heading">Foster Peters</span>
+                </div>
+              </a>
+            </li>
+
+            <!--Компания 5-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <div class="clients-border">
+                  <svg class="clients-icon" width="59px" height="47px">
+                    <use href="./images/webstudio.svg#icon-logo_5"></use>
+                  </svg>
+                  <span class="f-heading">Brand</span>
+                </div>
+              </a>
+            </li>
+
+            <!--Компания 6-->
+            <li class="client-item">
+              <a href="/" class="clients-site-link">
+                <div class="clients-border">
+                  <svg class="clients-icon" width="88px" height="45px">
+                    <use href="./images/webstudio.svg#icon-logo_6"></use>
+                  </svg>
+                  <span class="f-heading">Company Tagline</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Подвал-->
+    <footer class="box">
+      <!--Лого-->
+      <div class="container f-head-container">
+        <div class="logo-address">
+          <a href="/"
+            ><span class="f-logo-primary">Web</span>
+            <span class="f-logo-secondary">Studio</span></a
+          >
+
+          <!--Контакты-->
+          <address class="f-site-nav">
+            <p class="address-city">г. Киев, пр-т Леси Украинки, 26</p>
+
+            <a href="mailto:info@devstudio.com" class="f-link"
+              >info@devstudio.com</a
+            >
+
+            <a href="tel:380961111111" class="f-link">
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
+
+        <!--Соц. Сети-->
+        <section class="conecting">
+          <p class="conecting-title">Присоединяйтесь</p>
+          <ul class="list f-link">
+            <!--Instagram-->
+            <li class="f-snl">
+              <a
+                href="https://www.instagram.com/?hl=ru"
+                class="f-socialnet-link"
+              >
+                <svg width="20px" height="20px">
+                  <use href="./images/webstudio.svg#icon-instagram"></use>
+                </svg>
+                <span class="f-heading"> Instagram</span>
+              </a>
+            </li>
+
+            <!--Twitter-->
+            <li class="f-snl">
+              <a href="https://twitter.com/explore" class="f-socialnet-link"
+                ><svg width="20px" height="20px">
+                  <use href="./images/webstudio.svg#icon-twitter"></use>
+                </svg>
+                <span class="f-heading">Twitter</span></a
+              >
+            </li>
+
+            <!--Facebook-->
+            <li class="f-snl">
+              <a href="https://uk-ua.facebook.com/" class="f-socialnet-link">
+                <svg width="20px" height="20px">
+                  <use href="./images/webstudio.svg#icon-facebook"></use>
+                </svg>
+                <span class="f-heading">Facebook</span></a
+              >
+            </li>
+
+            <!--Linkedin-->
+            <li class="f-snl">
+              <a href="https://ua.linkedin.com/" class="f-socialnet-link">
+                <svg width="20px" height="20px">
+                  <use href="./images/webstudio.svg#icon-linkedin"></use>
+                </svg>
+                <span class="f-heading">Linkedin</span></a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <div>
+          <p class="conecting-title">Подпишитесь на рассылку</p>
+          <form>
+            <label class="f-form-field">
+              <input type="email" placeholder="E-mail" name="email" />
+            </label>
+            <button type="submit" class="button-submit">
+              Подписаться
+              <svg width="24px" height="24px">
+                <use href="./images/webstudio.svg#icon-icon_send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <p class="developed">2020 | Developed by GoIT Students</p>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
