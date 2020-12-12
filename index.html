@@ -15,15 +15,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    
-   <div class="modal-new-ad">
+<button class="button-secondary" data-modal-open>Open</button>
+
+  <div class="backdrop-modal is-hidden" data-modal>
+   <div class="modal" data-modal>
     <h2>Додати оголошення</h2>
      <form action="">
+      <button class="close-button" data-modal-close>
+        <svg class="close-icon">
+          <use href="./symbol-defs-1.svg#icon-close-24px-1"></use>
+        </svg>
+      </button>
 
        <!-- Название товара -->
-       <div class="name-of-product">
+       <div>
          <label for="">Назва товару</label>
-         <input type="text">
+         <input class="name-of-product" type="text">
        </div>
 
        <!-- Фото товар -->
@@ -42,28 +49,36 @@
        <!-- Описание товара -->
        <div class="product-description">
          <label for="">Опис товару</label>
-        <textarea name="description" rows="5" cols="50" id="comment" placeholder=" "></textarea>
+        <textarea class="description" name="description" rows="5" cols="50" id="comment" placeholder=" "></textarea>
        </div>
 
        <!-- Категория товара -->
        <div class="product-category">
          <label for="">Категорія товару</label>
-         <select style="width: 100%" name="" id="">
-        <option value=""></option>
+         <select class="category" style="width: 50%" name="" id="">
+        <option value="">property</option>
+        <option value="">transport</option>
+        <option value="">work</option>
+        <option value="">electronics</option>
+        <option value="">business and services</option>
+        <option value="">recreation and sport</option>
+        <option value="">free</option>
+        <option value="">trade</option>
         </select>
        </div>
+
 
        <!-- Цена -->
        <div>
          <label for="">Ціна</label>
-         <input type="text" placeholder="0.00 грн">
+         <input class="price" type="text" placeholder="0.00 грн">
        </div>
 
 
        <!-- Телефон -->
       <div>
         <label for="">Телефон</label>
-        <input type="tel" placeholder="+38 (0--) --- -- --">
+        <input class="phone" type="tel" placeholder="+38 (0--) --- -- --">
       </div>
 
       <!-- Кнопка "Додати" -->
@@ -72,5 +87,7 @@
       </div>
    </form>
   </div>
+  </div>
+  <script src="./modal.js"></script>
   </body>
 </html>
